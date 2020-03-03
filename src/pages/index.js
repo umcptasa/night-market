@@ -25,7 +25,7 @@ import "../assets/css/bootstrap.min.css";
 import "../assets/scss/paper-kit.scss";
 import "../assets/demo/demo.css";
 // pages
-import LandingPage from "./LandingPage.jsx";
+import HomePage from "./HomePage.jsx";
 //import Index from "views/Index.js";
 // import NucleoIcons from "views/NucleoIcons.js";
 // import LandingPage from "views/examples/LandingPage.js";
@@ -38,7 +38,7 @@ let hist = createMemoryHistory();
 export default () => (
   <Router history={hist}>
     <Switch>
-      <Route path="/" component={LandingPage} />
+      <Route path="/" component={HomePage} />
       {/* <Route path="/index" render={props => <Index {...props} />} />
       <Route
         path="/nucleo-icons"

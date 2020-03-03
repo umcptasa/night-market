@@ -6,7 +6,7 @@ import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 
-const LandingPage = (props) => {
+const HomePage = (props) => {
 
     return (
         <>
@@ -26,4 +26,4 @@ const LandingPage = (props) => {
     );
 };
 
-export default LandingPage;
+export default HomePage;

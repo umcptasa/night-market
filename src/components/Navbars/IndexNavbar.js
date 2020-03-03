@@ -69,9 +69,9 @@ function IndexNavbar() {
             data-placement="bottom"
             href="/index"
             target="_blank"
-            title="Coded by Creative Tim"
+            title="UMCP TASA Night Market"
           >
-            Paper Kit React
+            UMCP TASA Night Market
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -142,17 +142,6 @@ function IndexNavbar() {
               >
                 <i className="nc-icon nc-book-bookmark" /> Documentation
               </NavLink>
-            </NavItem>
-            <NavItem>
-              <Button
-                className="btn-round"
-                color="danger"
-                href="#pablo"
-                target="_blank"
-                disabled
-              >
-                Upgrade to Pro
-              </Button>
             </NavItem>
           </Nav>
         </Collapse>

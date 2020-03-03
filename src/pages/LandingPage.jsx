@@ -3,12 +3,27 @@
  */
 
 import React from "react";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import IndexHeader from "components/Headers/IndexHeader.js";
 
 const LandingPage = (props) => {
 
-    return (<h1>
-        HELLO WORLD
-    </h1>);
+    return (
+        <>
+            <IndexNavbar />
+            <IndexHeader />
+            <div className="main">
+                <h1>
+                    Hello World
+                </h1>
+
+
+                <p>
+                    This is my content
+                </p>
+            </div>
+        </>
+    );
 };
 
 export default LandingPage;

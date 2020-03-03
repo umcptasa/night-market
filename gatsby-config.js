@@ -9,13 +9,14 @@ module.exports = {
     siteUrl: urljoin(config.siteUrl, config.pathPrefix),
   },
   plugins: [
+    "gatsby-plugin-resolve-src",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
     "gatsby-plugin-sass",
     // {
     //   resolve: "gatsby-source-filesystem",
     //   options: {
-    //     name: "assets",
+    //     name: "components",
     //     path: `${__dirname}/static/assets/`
     //   }
     // },

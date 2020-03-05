@@ -4701,7 +4701,7 @@ License - nucleoapp.com/license/
   left: 0;
   bottom: 0;
   margin-left: -35%;
-  margin-bottom: -50px;
+  margin-bottom: -25px;
   width: 110%;
   opacity: .85; }
   .fog-low img {
@@ -4719,7 +4719,7 @@ License - nucleoapp.com/license/
   bottom: 0;
   left: 0;
   width: 250.625em;
-  height: 43.75em;
+  height: 25.75em;
   -webkit-animation: cloudLoop 80s linear infinite;
   animation: cloudLoop 80s linear infinite; }
 

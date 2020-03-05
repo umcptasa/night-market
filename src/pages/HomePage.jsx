@@ -5,6 +5,7 @@
 import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
+import SectionAboutUs from "components/Sections/SectionAboutUs";
 
 const HomePage = (props) => {
 
@@ -13,14 +14,7 @@ const HomePage = (props) => {
             <IndexNavbar />
             <IndexHeader />
             <div className="main">
-                <h1>
-                    Hello World
-                </h1>
-
-
-                <p>
-                    This is my content
-                </p>
+                <SectionAboutUs />
             </div>
         </>
     );

@@ -13,13 +13,22 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
     "gatsby-plugin-sass",
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     name: "components",
-    //     path: `${__dirname}/static/assets/`
-    //   }
-    // },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "components",
+        path: `${__dirname}/src/components/`
+      }
+    },
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            name: `images`,
+            path: `${__dirname}/src/assets/img/`,
+        },
+    },
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -48,8 +57,6 @@ module.exports = {
         color: "#c62828"
       }
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-netlify-cms",
     {

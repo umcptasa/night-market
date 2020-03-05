@@ -36,8 +36,10 @@ const SectionAboutUs = (props) => {
                 </h5>
                 <br />
                 <div className="icon icon-info">
-                    <i className="nc-icon nc-album-2" />
+                    <i className="nc-icon nc-map-big" />
                 </div>
+                Jiufen
+        
               </Col>
               <Col md="4" sm = "12">
                 <h2 className="title">A big image goes here</h2>

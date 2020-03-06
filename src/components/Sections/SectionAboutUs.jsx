@@ -23,6 +23,7 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import Video from "components/General/Video";
 
 const SectionAboutUs = (props) => {
 
@@ -39,25 +40,16 @@ const SectionAboutUs = (props) => {
           <Col className="ml-auto mr-auto" md="8" sm="12">
             <h2 className="title">What is a Night Market?</h2>
             <h5 className="description">
-              An amazing Night Market description that lasts for many pagraphs.
+              An amazing Night Market description that lasts for many paragraphs.
               It is so amazing that wow I can't even type it all out. So cool.
-              Such grace. Truly tremendous.
+              Such grace. Truly tremendous. Something about 小吃. Something about 夜市. Nice.
+              Thank you for reading this wonderful content
                 </h5>
             <br />
 
             <h5>
               <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} size='2x' /> Jiufen
             </h5>
-
-          </Col>
-          <Col md="4" sm="12">
-            <h2 className="title">A big image goes here</h2>
-          </Col>
-        </Row>
-        <br />
-        <br />
-        <Row>
-          <Col md="6">
             <Button
               className="btn-round"
               color="info"
@@ -66,6 +58,9 @@ const SectionAboutUs = (props) => {
             >
               See Details
                 </Button>
+          </Col>
+          <Col md="4" sm="12">
+            <Video srcUrl="https://www.youtube.com/watch?v=liRAriTKG4w" title="Night Market 2018 Promo Video"/>
           </Col>
         </Row>
       </Container>

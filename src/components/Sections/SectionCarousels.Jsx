@@ -13,6 +13,7 @@ import {
 
 // core components
 import FoodCarousel from "components/Carousels/FoodCarousel";
+import GamesCarousel from "components/Carousels/GamesCarousel";
 
 
 function SectionCarousels() {
@@ -25,7 +26,7 @@ function SectionCarousels() {
             
           </Col>
           <Col sm="6">
-            <FoodCarousel />
+            <GamesCarousel />
           </Col>
         </Row>
       </Container>

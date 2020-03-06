@@ -9,10 +9,6 @@ import SectionAboutUs from "components/Sections/SectionAboutUs";
 import SectionCarousels from "components/Sections/SectionCarousels";
 import Footer from "components/Footers/Footer";
 
-import {
-    Button,
-  } from "reactstrap";
-
 const HomePage = (props) => {
 
     return (

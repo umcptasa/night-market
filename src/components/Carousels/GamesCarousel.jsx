@@ -6,12 +6,12 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import GeneralCarousel from "components/Carousels/GeneralCarousel";
 
-const FoodCarousel = (props) => {
+const GamesCarousel = (props) => {
     const data = useStaticQuery(graphql`
     query {
         allFile(filter: {
             extension: {regex: "/(jpg)|(jpeg)|(png)/"}, 
-            relativeDirectory: {eq: "food"}
+            relativeDirectory: {eq: "games"}
         }) {
           edges {
             node {
@@ -36,8 +36,8 @@ const FoodCarousel = (props) => {
     });
 
     return (
-        <GeneralCarousel id="food-carousel" items={items} title="Food" />
+        <GeneralCarousel id="games-carousel" items={items} title="Games" />
     );
 }
 
-export default FoodCarousel;
+export default GamesCarousel;

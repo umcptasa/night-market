@@ -22,64 +22,6 @@ const HomePage = (props) => {
             <div className="main">
                 <SectionAboutUs />
                 <SectionCarousels />
-                <div className="section" >
-                <Button
-                  className="btn-round mr-1"
-                  color="default"
-                  outline
-                  type="button"
-                >
-                  Default
-                </Button>
-                <Button
-                  className="btn-round mr-1"
-                  color="primary"
-                  outline
-                  type="button"
-                >
-                  Primary
-                </Button>
-                <Button
-                  className="btn-round mr-1"
-                  color="info"
-                  outline
-                  type="button"
-                >
-                  Info
-                </Button>
-                <Button
-                  className="btn-round mr-1"
-                  color="success"
-                  outline
-                  type="button"
-                >
-                  Success
-                </Button>
-                <Button
-                  className="btn-round mr-1"
-                  color="warning"
-                  outline
-                  type="button"
-                >
-                  Warning
-                </Button>
-                <Button
-                  className="btn-round mr-1"
-                  color="danger"
-                  outline
-                  type="button"
-                >
-                  Danger
-                </Button>
-                <Button
-                  className="btn-round"
-                  outline
-                  color="neutral"
-                  type="button"
-                >
-                  Neutral
-                </Button>
-                </div>
             </div>
             <Footer />
         </>

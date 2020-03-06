@@ -32,8 +32,12 @@ import {
 } from "reactstrap";
 
 function IndexNavbar() {
+  const blackLogo = <img className="navbar-image" alt="TASA logo" src={require("assets/img/tasa_logo_black.png")} />;
+  const whiteLogo = <img className="navbar-image" alt="TASA logo" src={require("assets/img/tasa_logo_white.png")} />;
+
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [navbarLogo, setNavbarLogo] = React.useState(whiteLogo);
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
@@ -47,11 +51,13 @@ function IndexNavbar() {
         document.body.scrollTop > 299
       ) {
         setNavbarColor("");
+        setNavbarLogo(blackLogo)
       } else if (
         document.documentElement.scrollTop < 300 ||
         document.body.scrollTop < 300
       ) {
         setNavbarColor("navbar-transparent");
+        setNavbarLogo(whiteLogo)
       }
     };
 
@@ -67,10 +73,11 @@ function IndexNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="/index"
+            href="/"
             target="_blank"
             title="UMCP TASA Night Market"
           >
+            {navbarLogo}
             UMCP TASA Night Market
           </NavbarBrand>
           <button

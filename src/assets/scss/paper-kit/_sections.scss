@@ -29,7 +29,12 @@
     color: $white-color;
 }
 .section-dark{
-    background-color: #0b1011;
+    background-color: #252120;
+}
+.section-fade {
+    background: #252120;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #252120, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #252120, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .section-image,
 .section-gold,
@@ -51,6 +56,24 @@
         border-color: rgba(255, 255, 255, 0.19);
     }
 }
+
+.lantern-banner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: .85;
+    margin-left: -38%;
+
+    img{
+        width: 25%;
+    }
+
+    &.right{
+        margin-left: 38%;
+    }
+}
+
 .page-header,
 .carousel-caption{
     .title,

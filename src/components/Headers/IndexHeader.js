@@ -38,13 +38,13 @@ function IndexHeader() {
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title">UMCP TASA Night Market</h1>
-              <div className="fog-low">
+              <h1 className="presentation-title">UMCP 2020 Night Market</h1>
+              {/* <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
               <div className="fog-low right">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
+              </div> */}
             </div>
             <h2 className="presentation-subtitle text-center">
               The foundation of the empire.

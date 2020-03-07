@@ -18,12 +18,12 @@ import GamesCarousel from "components/Carousels/GamesCarousel";
 
 function SectionCarousels() {
   return (
-    <div className="section">
+    <div className="section" id="gallery">
       <Container>
         <Row>
           <Col sm="6">
             <FoodCarousel />
-            
+
           </Col>
           <Col sm="6">
             <GamesCarousel />

@@ -20,7 +20,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Button, Container, Row, Col } from "reactstrap";
 
 // core components
 
@@ -37,18 +37,34 @@ function IndexHeader() {
         <div className="filter" />
         <div className="content-center">
           <Container>
-            <div className="title-brand">
-              <h1 className="presentation-title">UMCP 2020 Night Market</h1>
-              {/* <div className="fog-low">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
-              <div className="fog-low right">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div> */}
-            </div>
-            <h2 className="presentation-subtitle text-center">
-              The foundation of the empire.
-            </h2>
+            <Row>
+              <Col className="ml-auto mr-auto" sm="12">
+                  <h1 className="presentation-title">UMCP 2020 Night Market</h1>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="ml-auto mr-auto" sm="12">
+                <h2 className="presentation-subtitle">
+                  The foundation of the empire.
+                </h2>
+              </Col>
+            </Row>
+            <br />
+            <Row>
+              <Col className="ml-auto mr-auto" sm="6">
+                <Button
+                  className="text-center"
+                  color="info"
+                  size="lg"
+                  href=""
+                  onClick={e => e.preventDefault()}
+                  block
+                >
+                  Saturday, April 11, 2020 | 6 PM @ Hornbake Plaza
+                </Button>
+              </Col>
+            </Row>
+
           </Container>
         </div>
         <div

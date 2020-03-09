@@ -91,6 +91,10 @@
         font-size: 3.4em;
     }
 }
+.icon {
+    position: relative;   
+}
+
 .icon-primary{
     color: $primary-color;
 }
@@ -108,4 +112,12 @@
 }
 .icon-neutral{
     color: $white-color;
+}
+
+.icon-white {
+    color: $white-color;
+}
+
+.icon-text {
+    margin: 0 auto;
 }

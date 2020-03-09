@@ -86,7 +86,7 @@ const GeneralCarousel = (props) => {
                                         }}
                                         role="button"
                                     >
-                                        <span className="fa fa-angle-left" />
+                                        <i className="nc-icon nc-minimal-left" />
                                         <span className="sr-only">Previous</span>
                                     </a>
                                     <a
@@ -98,7 +98,7 @@ const GeneralCarousel = (props) => {
                                         }}
                                         role="button"
                                     >
-                                        <span className="fa fa-angle-right" />
+                                        <i className="nc-icon nc-minimal-right" />
                                         <span className="sr-only">Next</span>
                                     </a>
                                 </Carousel>

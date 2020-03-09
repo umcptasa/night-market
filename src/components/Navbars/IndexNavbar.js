@@ -72,13 +72,13 @@ function IndexNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand
+            className="navbar-brand"
             data-placement="bottom"
             href="/"
             target="_blank"
             title="UMCP TASA Night Market"
           >
             {navbarLogo}
-            UMCP TASA Night Market
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -93,7 +93,7 @@ function IndexNavbar() {
           </button>
         </div>
         <Collapse
-          className="justify-content-end"
+          className={classnames("justify-content-end", navbarColor)}
           navbar
           isOpen={navbarCollapse}
         >
@@ -101,55 +101,41 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Follow us on Twitter"
+                href="/"
+                target="_self"
+                title="Home"
               >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
+                <p>Home</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Like us on Facebook"
+                href="/#about-us"
+                target="_self"
+                title="About"
               >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
+                <p>About</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Follow us on Instagram"
+                href="/#gallery"
+                target="_self"
+                title="Gallery"
               >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
+                <p>Gallery</p>
               </NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
-                target="_blank"
-                title="Star on GitHub"
-              >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
+                href="https://www.facebook.com/umcptasa/"
                 target="_blank"
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
+                <FontAwesomeIcon icon={faFacebook}/> 
               </NavLink>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Container>

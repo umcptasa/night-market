@@ -50,7 +50,7 @@
     .description,
     .card-plain .card-description,
     .card-plain .card-category{
-        color: rgba($white-color, .7);
+        color: rgba($white-color, .8);
     }
     hr{
         border-color: rgba(255, 255, 255, 0.19);
@@ -65,13 +65,26 @@
     opacity: .85;
     margin-left: -38%;
 
-    img{
-        width: 25%;
+    img {
+        width: 50%;
+    }
+
+    @media only screen and (min-device-width: 600px) {
+        img {
+            width: 25%;
+        }
     }
 
     &.right{
         margin-left: 38%;
     }
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .page-header,

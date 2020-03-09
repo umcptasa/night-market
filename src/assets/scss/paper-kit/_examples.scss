@@ -1,3 +1,8 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
 .landing-alert{
     margin-bottom: 0;
 }
@@ -163,7 +168,7 @@
         position: absolute;
         font-size: 20px;
         background: #132026;
-        padding: 6px 10px;
+        //padding: 6px 10px;
         border-radius: 4px;
         top: 0;
         font-weight: 600;
@@ -173,20 +178,22 @@
 }
 
 .presentation-title{
-    font-size: 8em;
+    font-size: 6em;
     font-weight: 700;
     margin: 0;
     color: #FFFFFF;
-    background: #fbf8ec;
-    background: -moz-linear-gradient(top, #FFFFFF 35%, #de979d 150%);
-    background: -webkit-linear-gradient(top, #FFFFFF 35%,#de979d 150%);
-    background: -ms-linear-gradient(top, #FFFFFF 35%,#de979d 150%);
-    background: linear-gradient(to bottom, #FFFFFF 35%,#de979d 150%);
+    text-align: center;
+    // background: #fbf8ec;
+    // background: -moz-linear-gradient(top, #FFFFFF 0%, #f55a0a 150%);
+    // background: -webkit-linear-gradient(top, #FFFFFF 0%,#f55a0a 150%);
+    // background: -ms-linear-gradient(top, #FFFFFF 0%,#f55a0a 150%);
+    // background: linear-gradient(to bottom, #FFFFFF 0%,#f55a0a 150%);
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 }
 .presentation-subtitle{
+    text-align: center;
     font-size: 1.7em;
     color: #FFFFFF;
 }

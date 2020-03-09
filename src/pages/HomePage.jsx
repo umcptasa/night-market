@@ -12,7 +12,7 @@ import Footer from "components/Footers/Footer";
 const HomePage = (props) => {
 
     return (
-        <>
+        <div className="home-page">
             <IndexNavbar />
             <IndexHeader />
             <div className="main">
@@ -20,7 +20,7 @@ const HomePage = (props) => {
                 <SectionCarousels />
             </div>
             <Footer />
-        </>
+        </div>
     );
 };
 

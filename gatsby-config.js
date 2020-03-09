@@ -23,11 +23,19 @@ module.exports = {
       }
     },
     {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-            name: `images`,
-            path: `${__dirname}/src/assets/img/`,
-        },
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/img/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+        spreadsheetId: '1u_oC-huqhXMTTSIp6YSelAkMeKaNzQqYap6mf2VrTSg',
+        worksheetTitle: 'Website Schedule',
+        credentials: require('./content/google-sheets.json')
+      }
     },
     {
       resolve: "gatsby-transformer-remark",

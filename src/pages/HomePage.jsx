@@ -5,11 +5,12 @@
 import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
+import Footer from "components/Footers/Footer";
 import SectionAboutUs from "components/Sections/SectionAboutUs";
 import SectionCarousels from "components/Sections/SectionCarousels";
 import SectionSchedule from "components/Sections/SectionSchedule";
 import SectionTicketing from "components/Sections/SectionTicketing";
-import Footer from "components/Footers/Footer";
+import SectionSponsors from "components/Sections/SectionSponsors";
 
 const HomePage = (props) => {
 
@@ -22,6 +23,7 @@ const HomePage = (props) => {
                 <SectionTicketing />
                 <SectionCarousels />
                 <SectionSchedule />
+                <SectionSponsors />
             </div>
             <Footer />
         </div>

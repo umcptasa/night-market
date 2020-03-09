@@ -21,11 +21,11 @@ function SectionCarousels() {
     <div className="section" id="gallery">
       <Container>
         <Row>
-          <Col sm="6">
+          <Col sm="12" md="6">
             <FoodCarousel />
 
           </Col>
-          <Col sm="6">
+          <Col sm="12" md="6">
             <GamesCarousel />
           </Col>
         </Row>

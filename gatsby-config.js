@@ -34,7 +34,7 @@ module.exports = {
       options: {
         spreadsheetId: '1u_oC-huqhXMTTSIp6YSelAkMeKaNzQqYap6mf2VrTSg',
         worksheetTitle: 'Website Schedule',
-        credentials: require('./content/google-sheets.json')
+        credentials: require('./data/google-sheets.json')
       }
     },
     {

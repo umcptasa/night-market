@@ -9,8 +9,8 @@ const Video = ({ srcUrl, title, ...props }) => (
     <iframe
         className="video"
         src={srcUrl}
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen />
+        allowFullScreen />
 )
 export default Video

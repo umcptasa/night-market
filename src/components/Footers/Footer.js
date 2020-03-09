@@ -41,11 +41,10 @@ function Footer() {
                   <img className="footer-icon" alt="TASA logo" src={require("assets/img/tasa_logo_black.png")} /> UMCP TASA
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <Button className="btn-link ml-auto mr-auto" href="https://www.facebook.com/umcptasa/" target="_blank">
                   <FontAwesomeIcon className="footer-icon icon-primary" icon={faFacebook} />
                 </Button>
-
               </li>
               <li>
                 <Button className="btn-link  ml-auto mr-auto" href="https://www.instagram.com/umcptasa/" target="_blank">
@@ -56,10 +55,20 @@ function Footer() {
                 <Button className="btn-link  ml-auto mr-auto" href="https://www.youtube.com/channel/UC40-b0_FuCsHA1lM0vCZsng/featured" target="_blank">
                   <FontAwesomeIcon className="footer-icon icon-primary" icon={faYoutube} />
                 </Button>
-              </li>
+              </li> */}
             </ul>
           </nav>
-          <div className="credits ml-auto">
+          <div className="credits ml-auto links">
+          <Button className="btn-link ml-auto mr-auto" href="https://www.facebook.com/umcptasa/" target="_blank">
+                  <FontAwesomeIcon className="footer-icon icon-primary" icon={faFacebook} />
+                </Button>
+
+                <Button className="btn-link  ml-auto mr-auto" href="https://www.instagram.com/umcptasa/" target="_blank">
+                  <FontAwesomeIcon className="footer-icon icon-primary" icon={faInstagram} />
+                </Button>
+                <Button className="btn-link  ml-auto mr-auto" href="https://www.youtube.com/channel/UC40-b0_FuCsHA1lM0vCZsng/featured" target="_blank">
+                  <FontAwesomeIcon className="footer-icon icon-primary" icon={faYoutube} />
+                </Button>
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
               <FontAwesomeIcon className="fa fa-heart heart" icon={faHeart} /> by UMCP TASA

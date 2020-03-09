@@ -128,6 +128,16 @@ function IndexNavbar() {
                 <p>Gallery</p>
               </NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="/#schedule"
+                target="_self"
+                title="Schedule"
+              >
+                <p>Schedule</p>
+              </NavLink>
+            </NavItem>
             {/* <NavItem>
               <NavLink
                 href="https://www.facebook.com/umcptasa/"

@@ -44,7 +44,7 @@ const SectionSchedule = (props) => {
                             <tbody>
                                 {data.allGoogleSheetWebsiteScheduleRow.nodes.map(row => {
                                     return (
-                                        <tr>
+                                        <tr key={row.id}>
                                             <td>{row.time}</td>
                                             <td>{row.event}</td>
                                         </tr>

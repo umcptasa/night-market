@@ -51,6 +51,11 @@
     background-color: $white-color;
     line-height: $line-height;
 
+    .footer-icon {
+        width: 25px;
+        height: 25px;
+    }
+
     &.footer-black{
         h4{
             color: $white-color;

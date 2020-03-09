@@ -20,9 +20,10 @@
 import React from "react";
 
 // reactstrap components
-import { Row, Container } from "reactstrap";
+import { Button, Row, Container } from "reactstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
 function Footer() {
@@ -30,15 +31,31 @@ function Footer() {
     <footer className="footer footer-black footer-white">
       <Container>
         <Row>
-          <nav className="footer-nav">
+          <nav className="footer-nav links">
             <ul>
               <li>
                 <a
                   href="https://umcptasa.org"
                   target="_blank"
                 >
-                  UMCP TASA
+                  <img className="footer-icon" alt="TASA logo" src={require("assets/img/tasa_logo_black.png")} /> UMCP TASA
                 </a>
+              </li>
+              <li>
+                <Button className="btn-link ml-auto mr-auto" href="https://www.facebook.com/umcptasa/" target="_blank">
+                  <FontAwesomeIcon className="footer-icon icon-primary" icon={faFacebook} />
+                </Button>
+
+              </li>
+              <li>
+                <Button className="btn-link  ml-auto mr-auto" href="https://www.instagram.com/umcptasa/" target="_blank">
+                  <FontAwesomeIcon className="footer-icon icon-primary" icon={faInstagram} />
+                </Button>
+              </li>
+              <li>
+                <Button className="btn-link  ml-auto mr-auto" href="https://www.youtube.com/channel/UC40-b0_FuCsHA1lM0vCZsng/featured" target="_blank">
+                  <FontAwesomeIcon className="footer-icon icon-primary" icon={faYoutube} />
+                </Button>
               </li>
             </ul>
           </nav>

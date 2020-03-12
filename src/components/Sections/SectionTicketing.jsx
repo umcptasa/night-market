@@ -23,7 +23,7 @@ const SectionTicketing = (props) => {
         <>
             <div className="section section-image" data-parallax={true} ref={pageHeader}
                 style={{
-                    backgroundImage: "url(" + require("assets/img/background.jpg") + ")"
+                    backgroundImage: "url(" + require("assets/img/jiufen-teahouse-night.jpg") + ")"
                 }}
             >
                 <Container>

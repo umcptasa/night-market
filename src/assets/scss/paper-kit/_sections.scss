@@ -144,6 +144,7 @@
     background-position: center center;
     background-size: cover;
     display: flex;
+    color: $white-color;
 
     &:before{
         background-color: rgba(0, 0, 0, 0.5);

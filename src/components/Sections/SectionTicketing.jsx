@@ -1,30 +1,27 @@
 import React from "react";
-
-import { Container, Row, Col} from "reactstrap";
+import { useStaticQuery, graphql } from "gatsby";
+import { Container, Row, Col } from "reactstrap";
+import BackgroundImage from 'gatsby-background-image';
 
 const SectionTicketing = (props) => {
-    let pageHeader = React.createRef();
-
-    React.useEffect(() => {
-        if (window.innerWidth < 991) {
-            const updateScroll = () => {
-                let windowScrollTop = window.pageYOffset / 3;
-                pageHeader.current.style.transform =
-                    "translate3d(0," + windowScrollTop + "px,0)";
-            };
-            window.addEventListener("scroll", updateScroll);
-            return function cleanup() {
-                window.removeEventListener("scroll", updateScroll);
-            };
+    const data = useStaticQuery(graphql`
+    query {
+        file(relativePath: {eq: "jiufen-teahouse-night.jpg"}) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
         }
-    });
+      } 
+    `);
 
     return (
         <>
-            <div className="section section-image" data-parallax={true} ref={pageHeader}
-                style={{
-                    backgroundImage: "url(" + require("assets/img/jiufen-teahouse-night.jpg") + ")"
-                }}
+            <BackgroundImage
+                Tag="section"
+                className="section section-image"
+                fluid={data.file.childImageSharp.fluid}
             >
                 <Container>
                     <Row>
@@ -41,7 +38,7 @@ const SectionTicketing = (props) => {
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </BackgroundImage>
         </>
     );
 };

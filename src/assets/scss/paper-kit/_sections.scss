@@ -33,7 +33,7 @@
 }
 
 .section-about-us {
-    padding-top: 70px;
+    padding-top: 60px;
 }
 
 .section-fade {
@@ -95,24 +95,24 @@
 
 .lantern-banner{
     position: absolute;
-    left: 0;
+    width: 50%;
     top: 0;
-    width: 100%;
-    opacity: .85;
-    margin-left: -38%;
+    opacity: .85; 
 
-    img {
-        width: 50%;
-    }
-
-    @media only screen and (min-device-width: 600px) {
-        img {
-            width: 25%;
-        }
+    &.left {
+        left: 0;
+        margin-left: 0%;
     }
 
     &.right{
-        margin-left: 38%;
+        right: 0;
+        margin-right: 0%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    @media only screen and (min-device-width: 600px) {
+        width: 20%
     }
 }
 

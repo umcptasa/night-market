@@ -30,12 +30,9 @@ const SectionAboutUs = (props) => {
   return (
     <>
       <div className="section section-dark section-about-us" id="about-us">
-        <div className="lantern-banner">
-          <img alt="lantern banner" src={require("assets/img/lantern-banner.png")} />
-        </div>
-        <div className="lantern-banner right">
-          <img alt="lantern banner" src={require("assets/img/lantern-banner.png")} />
-        </div>
+        <img className="lantern-banner left" alt="lantern banner" src={require("assets/img/lantern-banner.png")} />
+        <img className="lantern-banner right" alt="lantern banner" src={require("assets/img/lantern-banner.png")} />
+
         <Container>
           <Row>
             <Col className="ml-auto mr-auto" md="8" sm="12">
@@ -62,9 +59,8 @@ const SectionAboutUs = (props) => {
                   <Button
                     className="btn-round"
                     color="info"
-                    href=""
+                    href="https://www.facebook.com/umcptasa/"
                     block
-                    onClick={e => e.preventDefault()}
                   >
                     See Details
                 </Button>

@@ -34,12 +34,12 @@ function IndexHeader() {
             "url(" + require("assets/img/jiufen-teahouse-night.jpg") + ")"
         }}
       >
-        <div className="filter" />
+        {/* <div className="filter" /> */}
         <div className="content-center">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" sm="12">
-                  <h1 className="presentation-title">UMCP 2020 Night Market</h1>
+                <h1 className="presentation-title">UMCP 2020 Night Market</h1>
               </Col>
             </Row>
             <Row>
@@ -50,21 +50,18 @@ function IndexHeader() {
               </Col>
             </Row>
             <br />
-            <Row>
+            <Row>         
               <Col className="ml-auto mr-auto" sm="6">
                 <Button
-                  className="text-center"
                   color="info"
                   size="lg"
-                  href=""
-                  onClick={e => e.preventDefault()}
+                  href="https://www.facebook.com/umcptasa/"
                   block
                 >
                   Saturday, April 11, 2020 | 6 PM @ Hornbake Plaza
                 </Button>
               </Col>
             </Row>
-
           </Container>
         </div>
         <div

@@ -9,7 +9,7 @@ const SectionTicketing = (props) => {
         file(relativePath: {eq: "jiufen-teahouse-night.jpg"}) {
             childImageSharp {
                 fluid {
-                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    ...GatsbyImageSharpFluid
                 }
               }
         }

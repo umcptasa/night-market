@@ -103,7 +103,7 @@ function EventPage(props: Props) {
                 </Section>
                 <Section title="Night Market Ends and Clean Up" maxWidth="lg">
                 </Section>
-                <Section title="Big/Little System" maxWidth="lg">
+                {/* <Section title="Big/Little System" maxWidth="lg">
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={4}>
                             <RaisedImage
@@ -112,7 +112,7 @@ function EventPage(props: Props) {
                             />
                         </Grid>
                     </Grid>
-                    </Section>
+                    </Section> */}
                 
 
             </PageContent>

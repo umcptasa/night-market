@@ -131,6 +131,16 @@ function AboutPage(props: Props) {
                         Taiwanese/Taiwanese American communities nationwide.
                     </Text>
                 </Section>
+                <div>
+      <iframe
+        width="853" height="480"
+        src="https://www.youtube.com/embed/2dwmmFll81k"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        title="video"
+      />{" "}
+    </div>
 
             </PageContent>
         </>

@@ -1,135 +1,114 @@
-const urljoin = require("url-join");
-const config = require("./data/SiteConfig");
-
-const regexExcludeRobots = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
+const path = require("path")
+const urljoin = require("url-join")
+const config = require("./site-config").config
+require("dotenv").config() // for later use with environment variables
 
 module.exports = {
-  pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
-  siteMetadata: {
-    siteUrl: urljoin(config.siteUrl, config.pathPrefix),
-  },
-  plugins: [
-    "gatsby-plugin-resolve-src",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-lodash",
-    "gatsby-plugin-sass",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "components",
-        path: `${__dirname}/src/components/`
-      }
+    pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
+    siteMetadata: {
+        siteUrl: urljoin(config.pathPrefix, config.siteUrl),
+        title: config.siteTitle,
+        description: config.siteDescriptionShort,
+        dateFromFormat: config.dateFromFormat,
+        dateFormat: config.dateFormat,
+        copyright: config.copyright,
+        facebook: config.facebookLink,
+        instagram: config.instagramLink,
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/img/`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-        spreadsheetId: '1u_oC-huqhXMTTSIp6YSelAkMeKaNzQqYap6mf2VrTSg',
-        worksheetTitle: 'Website Schedule',
-        credentials: require('./data/google-sheets.json')
-      }
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Poppins`,
-            variants: [`400`, `700`]
-          },
-        ],
-      },
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-relative-images"
-          },
-          {
-            resolve: "gatsby-remark-images",
+    plugins: [
+        "gatsby-plugin-typescript",
+        "gatsby-plugin-react-helmet",
+        "gatsby-plugin-material-ui",
+        {
+            resolve: `gatsby-alias-imports`,
             options: {
-              maxWidth: 672
-            }
-          },
-          {
-            resolve: "gatsby-remark-responsive-iframe"
-          },
-          "gatsby-remark-prismjs",
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-autolink-headers"
-        ]
-      }
-    },
-    {
-      resolve: "gatsby-plugin-nprogress",
-      options: {
-        color: "#c62828"
-      }
-    },
-    "gatsby-plugin-catch-links",
-    "gatsby-plugin-netlify-cms",
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output: "/sitemap.xml",
-        query: `
-          {
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
+                aliases: {
+                    root: path.resolve(__dirname),
+                },
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "images",
+                path: `${__dirname}/src/images`,
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "static",
+                path: `${__dirname}/static/`,
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "events",
+                path: `${__dirname}/content/events/`,
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "bios",
+                path: `${__dirname}/content/bios/`,
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "order",
+                path: `${__dirname}/content/options/`,
+            },
+        },
+        {
+            resolve: "gatsby-plugin-mailchimp",
+            options: {
+                endpoint:
+                    "https://umcptasa.us15.list-manage.com/subscribe/post?u=61d5181acf601a2c75626d426&amp;id=c778997225", // string; add your MC list endpoint here; see instructions below
+                timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+            },
+        },
+        {
+            resolve: "gatsby-transformer-remark",
+            options: {
+                plugins: [
+                    {
+                        resolve: "gatsby-remark-relative-images",
+                    },
+                    {
+                        resolve: "gatsby-remark-images",
+                        options: {
+                            maxWidth: 672,
+                        },
+                    },
+                    "gatsby-remark-copy-linked-files",
+                    "gatsby-remark-autolink-headers",
+                ],
+            },
+        },
+        "gatsby-plugin-netlify",
+        "gatsby-plugin-netlify-cms",
+        "gatsby-transformer-sharp",
+        "gatsby-plugin-sharp",
+        "gatsby-plugin-image",
+        "gatsby-plugin-graphql-codegen",
+        {
+            resolve: "gatsby-plugin-manifest",
+            options: {
+                name: config.siteTitle,
+                short_name: config.siteTitleShort,
+                start_url: "/",
+                background_color: "#663399",
+                theme_color: "#663399",
+                display: "minimal-ui",
+                icon: "static/logo.png", // This path is relative to the root of the site.
+            },
+        },
 
-            allSitePage(
-              filter: {
-                path: {
-                  regex: "${regexExcludeRobots}"
-                }
-              }
-            ) {
-              edges {
-                node {
-                  path
-                }
-              }
-            }
-        }`
-      }
-    },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: config.pathPrefix,
-        background_color: "#e0e0e0",
-        theme_color: "#c62828",
-        display: "minimal-ui",
-        icons: [
-          {
-            src: "/logos/logo-192.png",
-            sizes: "192x192",
-            type: "image/png"
-          },
-          {
-            src: "/logos/logo-512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      }
-    },
-    "gatsby-plugin-offline",
-  ]
-};
+        // this (optional) plugin enables Progressive Web App + Offline functionality
+        // To learn more, visit: https://gatsby.dev/offline
+        "gatsby-plugin-offline",
+    ],
+}

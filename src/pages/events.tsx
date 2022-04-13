@@ -59,22 +59,6 @@ function EventPage(props: Props) {
                 </Text>
             </ParallaxBackground>
             <PageContent>
-                <Section title="5:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Set Up and Performer Arrival" maxWidth="lg">
-                </Section>
-                <Section title="5:00 - 6:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Tech Rehearsal" maxWidth="lg">
-                </Section>
-                <Section title="6:30 PM" maxWidth="lg">
-                </Section>
-                <Section title="1st Shift Volunteers Arrive/Instructions given" maxWidth="lg">
-                </Section>
-                <Section title="7:00 - 8:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Volunteer 1st Shift" maxWidth="lg">
-                </Section>
                 <Section title="7:00 PM" maxWidth="lg">
                 </Section>
                 <Section title="Night Market Starts" maxWidth="lg">
@@ -82,22 +66,6 @@ function EventPage(props: Props) {
                 <Section title="7:30 - 8:20 PM" maxWidth="lg">
                 </Section>
                 <Section title="Performances" maxWidth="lg">
-                </Section>
-                <Section title="7:50 PM" maxWidth="lg">
-                </Section>
-                <Section title="2nd Shift Volunteers Arrive/Instructions given" maxWidth="lg">
-                </Section>
-                <Section title="8:00 - 9:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Volunteer 2nd Shift" maxWidth="lg">
-                </Section>
-                <Section title="8:50 PM" maxWidth="lg">
-                </Section>
-                <Section title="3rd Shift Volunteers Arrive/Instructions given" maxWidth="lg">
-                </Section>
-                <Section title="9:00 - 10:00 PM" maxWidth="lg">
-                </Section>
-                <Section title="Volunteer 3rd Shift" maxWidth="lg">
                 </Section>
                 <Section title="10:00 PM" maxWidth="lg">
                 </Section>

@@ -140,6 +140,14 @@ function AboutPage(props: Props) {
         allowfullscreen
         title="video"
       />{" "}
+            <iframe
+        width="853" height="480"
+        src="https://www.youtube.com/embed/qKV_2317q2c"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+        title="video"
+      />{" "}
     </div>
 
             </PageContent>

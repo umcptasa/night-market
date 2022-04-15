@@ -32,7 +32,7 @@ function HeaderLinks(props: Props) {
             />
             <HeaderLink
                 to="/archive"
-                text="Misc"
+                text="Parking"
                 scrollTrigger={scrollTrigger}
             />
             <HeaderLink

@@ -63,9 +63,41 @@ function EventPage(props: Props) {
                 </Section>
                 <Section title="Night Market Starts" maxWidth="lg">
                 </Section>
-                <Section title="7:30 - 8:20 PM" maxWidth="lg">
+                <Section title="7:30 PM" maxWidth="lg">
                 </Section>
-                <Section title="Performances" maxWidth="lg">
+                <Section title="Independent Performers - kpop dance" maxWidth="lg">
+                </Section>
+                <Section title="7:35 PM" maxWidth="lg">
+                </Section>
+                <Section title="Independent Performers - kpop dance" maxWidth="lg">
+                </Section>
+                <Section title="7:40 PM" maxWidth="lg">
+                </Section>
+                <Section title="Mudit Mathur - guitar PM" maxWidth="lg">
+                </Section>
+                <Section title="7:45 PM" maxWidth="lg">
+                </Section>
+                <Section title="Pravas Dhakal - Rap" maxWidth="lg">
+                </Section>
+                <Section title="7:50 PM" maxWidth="lg">
+                </Section>
+                <Section title="Ganji - kpop dance" maxWidth="lg">
+                </Section>
+                <Section title="8:00 PM" maxWidth="lg">
+                </Section>
+                <Section title="Infinit Diabolo - Chinese Yo-yo" maxWidth="lg">
+                </Section>
+                <Section title="8:10 PM" maxWidth="lg">
+                </Section>
+                <Section title="Terp Wushu - Wushu" maxWidth="lg">
+                </Section>
+                <Section title="8:20 PM" maxWidth="lg">
+                </Section>
+                <Section title="Tianyi - Traditional Dance" maxWidth="lg">
+                </Section>
+                <Section title="8:30 PM" maxWidth="lg">
+                </Section>
+                <Section title="GGWB - kpop dance" maxWidth="lg">
                 </Section>
                 <Section title="10:00 PM" maxWidth="lg">
                 </Section>

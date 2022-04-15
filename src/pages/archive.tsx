@@ -32,19 +32,21 @@ function ArchivePage(props: Props) {
 
     return (
         <>
-            <SEO title="Events" />
+            <SEO title="Parking" />
             <ParallaxBackground image={background}>
-                <Text variant="h3" color="white" align="center">
-                    Misc
-                </Text>
             </ParallaxBackground>
+            <PageContent>
+                <Section title= <a href="https://transportation.umd.edu/parking/maps/umd-campus-parking-map">Full Map</a> maxWidth="lg">
+                </Section>
+
+            </PageContent>
         </>
     )
 }
 
 export const query = graphql`
     query ArchivePage {
-        background: file(relativePath: { eq: "archive.jpg" }) {
+        background: file(relativePath: { eq: "parking.jpg" }) {
             ...BackgroundImage
         }
     }

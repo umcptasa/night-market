@@ -150,7 +150,7 @@ function AboutPage(props: Props) {
       />{" "}
     </div>
 
-            </PageContent>
+    </PageContent>
         </>
     )
 }
